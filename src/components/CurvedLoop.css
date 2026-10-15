@@ -1,0 +1,68 @@
+.curved-loop-jacket {
+  width: 100%;
+  background-color: #0e0d0c;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 1.25rem 0;
+  /* Soft left/right fade masks */
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
+  mask-image: linear-gradient(to right,
+      transparent 0%,
+      black 8%,
+      black 92%,
+      transparent 100%);
+}
+
+.curved-loop-svg {
+  width: 100%;
+  height: 56px;
+  overflow: visible;
+  display: block;
+  font-family: 'DM Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 19px;
+  letter-spacing: 0.24em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.curved-loop-label {
+  fill: #a8a49c;
+  transition: fill 0.25s ease;
+}
+
+.curved-loop-jacket:hover .curved-loop-label {
+  fill: #f3f2ef;
+}
+
+.curved-loop-star {
+  fill: #E58E26;
+  font-size: 21px;
+}
+
+@media (max-width: 768px) {
+  .curved-loop-jacket {
+    padding: 0.9rem 0;
+  }
+
+  .curved-loop-svg {
+    height: 48px;
+    font-size: 15px;
+    letter-spacing: 0.2em;
+  }
+
+  .curved-loop-star {
+    font-size: 16px;
+  }
+}

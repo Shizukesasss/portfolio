@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+.dark {
+  color-scheme: dark;
+  --accent: #E58E26;
+  --primary: #E58E26;
+  --highlight: #E58E26;
+  --color-accent: #E58E26;
+  --progress: 0%;
+}
+
+::selection {
+  background-color: rgba(229, 142, 38, 0.25);
+  color: #E58E26;
+}
+
+::-moz-selection {
+  background-color: rgba(229, 142, 38, 0.25);
+  color: #E58E26;
+}
+
+*::selection {
+  background-color: rgba(229, 142, 38, 0.25);
+  color: #E58E26;
+}
+
+*::-moz-selection {
+  background-color: rgba(229, 142, 38, 0.25);
+  color: #E58E26;
+}
+
+html {
+  background-color: #15130F;
+  color: #EDE8DB;
+}
+
+body {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  background-color: #15130F;
+  color: #EDE8DB;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #15130F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #38332A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5A5446;
+}
+
+/* Accessible focus outline */
+:focus-visible {
+  outline: 2px solid var(--accent, #E58E26);
+  outline-offset: 3px;
+}
+
+/* Progress indicator animation */
+@keyframes progressScaleY {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
