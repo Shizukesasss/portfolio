@@ -38,6 +38,16 @@ export function Footer() {
         >
           LinkedIn
         </a>
+        {CONTENT.profile.resume && (
+          <a
+            href={CONTENT.profile.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-smoke hover:text-bone transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-amber rounded-sm"
+          >
+            Resume
+          </a>
+        )}
         <Magnetic strength={0.4} radius={60}>
           <button
             type="button"

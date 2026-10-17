@@ -7,7 +7,7 @@ import { Reveal } from '../motion/Reveal';
 import { Magnetic } from '../motion/Magnetic';
 import { Marquee } from '../components/Marquee';
 import { SelectedWork } from '../components/SelectedWork';
-import { TransitionLink, useTransitionNavigate } from '../components/RouteTransition';
+import { TransitionLink } from '../components/RouteTransition';
 import { useMotion } from '../motion/MotionContext';
 import { useLenis } from '../motion/LenisProvider';
 import { useReducedMotion, usePointerFine } from '../motion/hooks';
@@ -247,12 +247,12 @@ function Hero() {
           </Magnetic>
 
           <a
-            href="/resume.pdf"
+            href={CONTENT.profile.resume || '/Jeffrey_Cruel_Resume.pdf'}
             target="_blank"
             rel="noopener noreferrer"
             className="font-mono text-smoke hover:text-bone text-xs uppercase tracking-wider transition-colors px-4 py-2 border border-line rounded-full hover:border-stone focus:outline-none focus-visible:ring-1 focus-visible:ring-amber"
           >
-            resume.pdf ↗
+            Resume ↗
           </a>
         </div>
       </div>
@@ -287,7 +287,7 @@ function Statement() {
     const rawTokens = CONTENT.statement.split(' ');
     return rawTokens.map((token) => {
       const isHighlighted = token.includes('**') || token.includes('[') || token.includes(']');
-      const cleanText = token.replace(/[\*\[\]]/g, '');
+      const cleanText = token.replace(/\*\*|\[|\]/g, '');
       return { text: cleanText, isHighlighted };
     });
   }, []);
@@ -394,6 +394,21 @@ function About() {
               ))}
             </div>
           </Reveal>
+          {CONTENT.profile.resume && (
+            <Reveal delay={0.2}>
+              <div className="pt-6">
+                <a
+                  href={CONTENT.profile.resume}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-wider text-smoke hover:text-bone border border-line hover:border-amber rounded-full px-4 py-2 transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-amber"
+                >
+                  <span>View Full Resume</span>
+                  <span>↗</span>
+                </a>
+              </div>
+            </Reveal>
+          )}
         </div>
 
         {/* Right column: Grouped Skills with Pill Stagger */}
@@ -500,6 +515,16 @@ function ContactCTA() {
           >
             LinkedIn ↗
           </a>
+          {CONTENT.profile.resume && (
+            <a
+              href={CONTENT.profile.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs uppercase tracking-wider text-smoke hover:text-bone transition-colors px-4 py-3 rounded-sm focus:outline-none focus-visible:ring-1 focus-visible:ring-amber"
+            >
+              Resume ↗
+            </a>
+          )}
         </div>
       </Reveal>
     </section>

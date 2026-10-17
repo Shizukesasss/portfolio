@@ -12,6 +12,7 @@ export const CONTENT = {
     email: "crueljeffrey1904@gmail.com",
     github: "https://github.com/Shizukesasss",
     linkedin: "https://www.linkedin.com/in/jeffrey-cruel-518b72422/",
+    resume: "/Jeffrey_Cruel_Resume.pdf",
     facts: [
       "Problem-first mindset backed by hands-on experience in modern web architecture and version control.",
       "Detail-oriented builder driven by taking products from initial Figma concepts to polished micro-interactions.",
@@ -278,18 +279,17 @@ export const CONTENT = {
       stack: ["Python", "FastAPI / OpenCV", "Face Recognition", "React 18", "SQLAlchemy", "OpenPyXL", "Vite"],
       repoUrl: "https://github.com/Shizukesasss/EduScan",
       liveUrl: "https://github.com/Shizukesasss/EduScan",
-      image: "https://images.unsplash.com/photo-1507146426996-ef05388971b6?auto=format&fit=crop&q=80&w=800",
+      image: "/images/projects/eduscan/eduscan-overview.png",
       imageAlt: "EduScan – Facial Recognition Attendance & DepEd Grading System",
-      cover: "https://images.unsplash.com/photo-1507146426996-ef05388971b6?auto=format&fit=crop&q=80&w=640&h=800",
-      hero: "https://images.unsplash.com/photo-1507146426996-ef05388971b6?auto=format&fit=crop&q=80&w=1600&h=900",
+      cover: "/images/projects/eduscan/eduscan-overview.png",
+      hero: "/images/projects/eduscan/eduscan-overview.png",
       screens: [
-        "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=600&h=800",
-        "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=600&h=800",
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600&h=800"
+        "/images/projects/eduscan/eduscan-overview.png",
+        "/images/projects/eduscan/eduscan-attendance.png"
       ],
       details: [
-        "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=600&h=800",
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=600&h=800"
+        "/images/projects/eduscan/eduscan-attendance.png",
+        "/images/projects/eduscan/eduscan-overview.png"
       ],
       caseStudy: {
         overview: "EduScan is an automated web-based facial recognition attendance and grading report generation system built as an active Capstone Project for San Jose National High School. The system replaces manual roll call with real-time biometric face detection and instantly compiles official DepEd reports (School Form 2 - SF2 and quarterly gradebooks including MAPEH components).",
@@ -297,10 +297,8 @@ export const CONTENT = {
         outcome: "Engineered a Python and OpenCV biometric detection backend paired with an openpyxl template generator and a modern React web interface. Successfully automates student attendance logging and generates 100% compliant DepEd gradebook exports in seconds.",
         timeline: "Active Capstone Project — 2026 → Present",
         gallery: [
-          "https://images.unsplash.com/photo-1507146426996-ef05388971b6?auto=format&fit=crop&q=80&w=1200&h=675",
-          "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=1200&h=675",
-          "https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&q=80&w=600&h=800",
-          "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600&h=800"
+          "/images/projects/eduscan/eduscan-overview.png",
+          "/images/projects/eduscan/eduscan-attendance.png"
         ]
       }
     }

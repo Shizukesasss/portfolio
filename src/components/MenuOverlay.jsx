@@ -180,6 +180,16 @@ export function MenuOverlay({ isOpen, onClose }) {
         </a>
         <span className="text-stone">{CONTENT.profile.city}</span>
         <div className="flex gap-4">
+          {CONTENT.profile.resume && (
+            <a
+              href={CONTENT.profile.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-bone transition-colors"
+            >
+              Resume
+            </a>
+          )}
           <a
             href={CONTENT.profile.github}
             target="_blank"

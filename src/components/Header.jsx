@@ -145,6 +145,18 @@ export function Header() {
                   </li>
                 );
               })}
+              {CONTENT.profile.resume && (
+                <li>
+                  <a
+                    href={CONTENT.profile.resume}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-xs uppercase tracking-wider text-smoke hover:text-bone px-3 py-1.5 border border-line rounded-full hover:border-amber transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber"
+                  >
+                    Resume ↗
+                  </a>
+                </li>
+              )}
             </ul>
           </nav>
 

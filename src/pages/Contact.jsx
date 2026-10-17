@@ -148,6 +148,16 @@ export default function Contact() {
           >
             {copied ? '✓ Copied' : 'Copy email'}
           </button>
+          {CONTENT.profile.resume && (
+            <a
+              href={CONTENT.profile.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-mono text-xs text-smoke hover:text-bone border border-line hover:border-stone rounded-full px-4 py-1.5 transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-amber"
+            >
+              Resume ↗
+            </a>
+          )}
         </div>
       </Reveal>
 
