@@ -5,6 +5,7 @@ import { useReducedMotion } from '../motion/hooks';
 import { useLenis } from '../motion/LenisProvider';
 import { Magnetic } from '../motion/Magnetic';
 import { MenuOverlay } from './MenuOverlay';
+import { Logo } from './Logo';
 
 const NAV_ITEMS = [
   { label: 'Work', to: '/work', isHash: false },
@@ -97,12 +98,13 @@ export function Header() {
         } ${hidden && !menuOpen ? '-translate-y-full' : 'translate-y-0'}`}
       >
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          {/* Wordmark with scroll-driven gradient fill */}
+          {/* Wordmark with EP logo & scroll-driven gradient fill */}
           <Link
             to="/"
-            className="font-sans font-bold text-lg tracking-tight focus:outline-none focus-visible:ring-2 focus-visible:ring-amber rounded-sm group select-none"
+            className="flex items-center gap-2.5 font-sans font-bold text-lg tracking-tight focus:outline-none focus-visible:ring-2 focus-visible:ring-amber rounded-sm group select-none"
             aria-label={`${CONTENT.profile.name} — Home`}
           >
+            <Logo className="w-7 h-7" />
             <span
               style={{
                 background: 'linear-gradient(to right, #EDE8DB var(--progress, 0%), #5A5446 var(--progress, 0%))',

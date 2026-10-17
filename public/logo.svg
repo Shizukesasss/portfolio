@@ -1,0 +1,9 @@
+<svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="49" fill="#A8A190" />
+  <g fill="#15130F">
+    <!-- Dynamic 'E' -->
+    <path d="M43 25 C31 25 21 34 20 46 H41 V54 H20 C21 66 31 75 43 75 V67 C35 67 29 61 28 54 H35 V46 H28 C29 39 35 33 43 33 V25 Z" />
+    <!-- Dynamic 'P' -->
+    <path d="M53 25 V75 H61 V53 C71 53 79 46 79 38 C79 30 71 25 61 25 H53 Z M61 32 C67 32 71 34.5 71 38 C71 41.5 67 45 61 45 V32 Z" />
+  </g>
+</svg>
