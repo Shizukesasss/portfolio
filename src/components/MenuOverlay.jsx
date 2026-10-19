@@ -128,8 +128,24 @@ export function MenuOverlay({ isOpen, onClose }) {
     { num: '01', label: 'Home', to: '/' },
     { num: '02', label: 'Work', to: '/work' },
     { num: '03', label: 'About', to: '/#about' },
-    { num: '04', label: 'Contact', to: '/contact' },
+    { num: '04', label: 'Certifications', to: '/#certificates' },
+    { num: '05', label: 'Contact', to: '/contact' },
   ];
+
+  const handleLinkClick = (e, item) => {
+    onClose();
+    if (item.to.startsWith('/#')) {
+      const targetId = item.to.replace('/#', '');
+      const target = document.getElementById(targetId);
+      if (target) {
+        if (lenis) {
+          setTimeout(() => lenis.scrollTo(target, { offset: -80 }), 350);
+        } else {
+          setTimeout(() => target.scrollIntoView({ behavior: 'smooth' }), 350);
+        }
+      }
+    }
+  };
 
   return (
     <aside
@@ -152,7 +168,7 @@ export function MenuOverlay({ isOpen, onClose }) {
                 >
                   <Link
                     to={item.to}
-                    onClick={onClose}
+                    onClick={(e) => handleLinkClick(e, item)}
                     className="group inline-flex items-baseline gap-4 font-sans font-bold text-bone hover:text-amber transition-colors"
                     style={{ fontSize: 'clamp(2.5rem, 8vw, 5rem)' }}
                   >

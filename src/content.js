@@ -16,6 +16,7 @@ export const CONTENT = {
     facts: [
       "Problem-first mindset backed by hands-on experience in modern web architecture and version control.",
       "Detail-oriented builder driven by taking products from initial Figma concepts to polished micro-interactions.",
+      "Dual Google Certified in UX Design and AI with 16+ verified Coursera course credentials.",
       "Ready for impact—currently open to internships, freelance projects, and junior engineering roles."
     ]
   },
@@ -301,6 +302,154 @@ export const CONTENT = {
           "/images/projects/eduscan/eduscan-attendance.png"
         ]
       }
+    }
+  ],
+
+  certificates: [
+    {
+      id: "cert-google-ux",
+      title: "Google UX Design Professional Certificate",
+      issuer: "Google Career Certificates",
+      platform: "Coursera",
+      date: "October 17, 2026",
+      credentialId: "R1AJO8E3UXVD",
+      verifyUrl: "https://coursera.org/verify/professional-cert/R1AJO8E3UXVD",
+      shareUrl: "https://coursera.org/share/3620cb31ec9b6ccdf97fd4af3fba4503",
+      image: "/images/certificates/google-ux-design-professional-certificate.jpeg",
+      badge: "Professional Certificate",
+      highlight: "8-Course Specialization",
+      description: "Earned the complete Google UX Design Professional Certificate covering the end-to-end design lifecycle: empathizing with users, user personas, wireframing, low/high-fidelity interactive prototyping in Figma, responsive web design in Adobe XD, usability studies, and social good design.",
+      skills: ["UX Design", "Figma", "Adobe XD", "Wireframing", "User Research", "Usability Testing", "Design Systems", "Prototyping"],
+      courses: [
+        {
+          name: "Foundations of User Experience (UX) Design",
+          slug: "foundations-user-experience-design",
+          shareUrl: "https://coursera.org/share/c4e788a2e22761ab85228e7e12a705ec",
+          thumbnail: "/images/certificates/courses/foundations-user-experience-design.png",
+          description: "Foundational UX principles, user-centered design frameworks, equity-focused design, and UX design careers."
+        },
+        {
+          name: "Start the UX Design Process: Empathize, Define, and Ideate",
+          slug: "wireframes-low-fidelity-prototypes",
+          shareUrl: "https://coursera.org/share/1035f828d5c414d0cd99b80b2c1b3233",
+          thumbnail: "/images/certificates/courses/wireframes-low-fidelity-prototypes.png",
+          description: "Empathy maps, user personas, user stories, user journey maps, competitive audits, and low-fidelity prototypes in Figma."
+        },
+        {
+          name: "Conduct UX Research and Test Early Concepts",
+          slug: "conduct-ux-research",
+          shareUrl: "https://coursera.org/share/0b853589952fa26288bdaa1e9b19267e",
+          thumbnail: "/images/certificates/courses/conduct-ux-research.png",
+          description: "Planning and conducting usability studies, gathering feedback, affinity diagrams, and synthesizing research insights into design improvements."
+        },
+        {
+          name: "Create High-Fidelity Designs and Prototypes in Figma",
+          slug: "high-fidelity-designs-prototype",
+          shareUrl: "https://coursera.org/share/f285b6e22572284cfb9cf58ea2e47aec",
+          thumbnail: "/images/certificates/courses/high-fidelity-designs-prototype.png",
+          description: "Visual design principles, interactive mockups, design systems, design tokens, responsive typography, and design handoff to engineers."
+        },
+        {
+          name: "Build Dynamic User Interfaces (UI) for Websites",
+          slug: "responsive-web-design-adobe-xd",
+          shareUrl: "https://coursera.org/share/d05ab7efaed79f3434772902edde6353",
+          thumbnail: "/images/certificates/courses/responsive-web-design-adobe-xd.png",
+          description: "Designing responsive website layouts, sitemaps, responsive breakpoints, cross-device accessibility, and UI best practices."
+        },
+        {
+          name: "Design a User Experience for Social Good & Prepare for Jobs",
+          slug: "ux-design-jobs",
+          shareUrl: "https://coursera.org/share/c012e2ef52ce3130bf2372d2d3901b20",
+          thumbnail: "/images/certificates/courses/ux-design-jobs.png",
+          description: "End-to-end design of dedicated mobile apps and responsive sites for social good, design critique, and UX portfolio preparation."
+        },
+        {
+          name: "Accelerate Your Job Search with AI",
+          slug: "accelerate-your-job-search-with-ai",
+          shareUrl: "https://coursera.org/share/03e7cbd709e23254eb47f90b9c88ea5a",
+          thumbnail: "/images/certificates/courses/accelerate-your-job-search-with-ai.png",
+          description: "Leveraging generative AI to tailor portfolios, optimize technical resumes, prepare for design critiques, and accelerate career outreach."
+        }
+      ]
+    },
+    {
+      id: "cert-google-ai",
+      title: "Google AI Professional Certificate",
+      issuer: "Google Career Certificates",
+      platform: "Coursera",
+      date: "October 14, 2026",
+      credentialId: "GUFMKEAFU28M",
+      verifyUrl: "https://coursera.org/verify/professional-cert/GUFMKEAFU28M",
+      shareUrl: "https://coursera.org/share/a3a3dbac92d8ced140c0dcfdffe11d3d",
+      image: "/images/certificates/google-ai-professional-certificate.jpeg",
+      badge: "Professional Certificate",
+      highlight: "7-Course Specialization",
+      description: "Fluent in practical AI workflows across 7 courses: advanced prompt engineering, brainstorming, deep research with Gemini, communication synthesis, generative media creation, data analysis, and vibe coding custom applications.",
+      skills: ["Generative AI", "Gemini", "Prompt Engineering", "Vibe Coding", "Data Analysis", "NotebookLM", "AI App Building"],
+      courses: [
+        {
+          name: "AI Fundamentals",
+          slug: "google-ai-fundamentals",
+          shareUrl: "https://coursera.org/share/dae1e5e75daddf6fca27487e61e92a06",
+          thumbnail: "/images/certificates/courses/google-ai-fundamentals.png",
+          description: "Strengths and limitations of generative AI, prompt crafting, human-in-the-loop workflows, and responsible AI implementation."
+        },
+        {
+          name: "AI for Brainstorming and Planning",
+          slug: "google-ai-for-brainstorming-and-planning",
+          shareUrl: "https://coursera.org/share/7428eb07c6ba7f95ccc1e11b629b860d",
+          thumbnail: "/images/certificates/courses/google-ai-for-brainstorming-and-planning.png",
+          description: "Rapid ideation frameworks, turning abstract concepts into actionable work breakdowns, and stress-testing dependencies with Gemini."
+        },
+        {
+          name: "AI for Research and Insights",
+          slug: "google-ai-for-research-and-insights",
+          shareUrl: "https://coursera.org/share/ba8b57293d8db11820f83bc9e5014f99",
+          thumbnail: "/images/certificates/courses/google-ai-for-research-and-insights.png",
+          description: "Synthesizing multi-source documentation, NotebookLM workflows, expert persona meta-prompting, and accelerated research pipelines."
+        },
+        {
+          name: "AI for Writing and Communicating",
+          slug: "google-ai-for-writing-and-communicating",
+          shareUrl: "https://coursera.org/share/9b4f1b2275a659faefe2c1b584b592df",
+          thumbnail: "/images/certificates/courses/google-ai-for-writing-and-communicating.png",
+          description: "Transforming transcripts into executive briefs, multi-stakeholder messaging tone adaptation, and clarity enhancement."
+        },
+        {
+          name: "AI for Content Creation",
+          slug: "google-ai-for-content-creation",
+          shareUrl: "https://coursera.org/share/08253bf833aed9cf14a52f77f8e2e72f",
+          thumbnail: "/images/certificates/courses/google-ai-for-content-creation.png",
+          description: "Generating visual assets, building presentations with Google Slides AI, establishing design consistency, and creative directing with AI."
+        },
+        {
+          name: "AI for Data Analysis",
+          slug: "google-ai-for-data-analysis",
+          shareUrl: "https://coursera.org/share/f2d8e20d187fec95eae95e72598df254",
+          thumbnail: "/images/certificates/courses/google-ai-for-data-analysis.png",
+          description: "Natural language spreadsheet formulas, automated data cleansing, trend extraction, and building visual data dashboards in Google Sheets."
+        },
+        {
+          name: "AI for App Building",
+          slug: "google-ai-for-app-building",
+          shareUrl: "https://coursera.org/share/26ce74a792f744202e6025b39c804fc6",
+          thumbnail: "/images/certificates/courses/google-ai-for-app-building.png",
+          description: "Vibe coding applications using natural language, full-stack workflow integration, avoiding common pitfalls, and deploying practical tools."
+        }
+      ]
+    },
+    {
+      id: "cert-google-bi",
+      title: "Foundations of Business Intelligence",
+      issuer: "Google Career Certificates",
+      platform: "Coursera",
+      date: "October 2026",
+      shareUrl: "https://coursera.org/share/cfe1eb39419bf600bcfece99a0b23c19",
+      thumbnail: "/images/certificates/courses/foundations-of-business-intelligence.png",
+      badge: "Google Course",
+      highlight: "BI Architecture & Analytics",
+      description: "First core component of the Google Business Intelligence Certificate: exploring BI professional roles, data modeling, data pipelines, ETL concepts, and designing executive dashboard metrics to empower decision-making.",
+      skills: ["Business Intelligence", "Data Modeling", "Data Pipelines", "KPIs & Metrics", "Dashboard Design", "Data Strategy"]
     }
   ]
 };

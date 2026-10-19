@@ -9,6 +9,7 @@ import { MenuOverlay } from './MenuOverlay';
 const NAV_ITEMS = [
   { label: 'Work', to: '/work', isHash: false },
   { label: 'About', to: '/#about', isHash: true },
+  { label: 'Certifications', to: '/#certificates', isHash: true },
   { label: 'Contact', to: '/contact', isHash: false },
 ];
 
@@ -42,15 +43,23 @@ export function Header() {
 
       // Detect active hash section on home page
       if (location.pathname === '/') {
+        const certsEl = document.getElementById('certificates');
         const aboutEl = document.getElementById('about');
-        if (aboutEl) {
-          const rect = aboutEl.getBoundingClientRect();
-          if (rect.top <= 200 && rect.bottom >= 100) {
-            setActiveHash('#about');
-          } else {
-            setActiveHash('');
+        if (certsEl) {
+          const rect = certsEl.getBoundingClientRect();
+          if (rect.top <= 250 && rect.bottom >= 120) {
+            setActiveHash('#certificates');
+            return;
           }
         }
+        if (aboutEl) {
+          const rect = aboutEl.getBoundingClientRect();
+          if (rect.top <= 250 && rect.bottom >= 120) {
+            setActiveHash('#about');
+            return;
+          }
+        }
+        setActiveHash('');
       }
     };
 
@@ -69,7 +78,8 @@ export function Header() {
     if (item.isHash) {
       if (location.pathname === '/') {
         e.preventDefault();
-        const target = document.getElementById('about');
+        const targetId = item.to.replace('/#', '');
+        const target = document.getElementById(targetId);
         if (target) {
           if (lenis) {
             lenis.scrollTo(target, { offset: -80 });
@@ -119,10 +129,11 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8" aria-label="Primary">
             <ul className="flex items-center gap-8">
               {NAV_ITEMS.map((item) => {
+                const targetHash = item.to.replace('/', '');
                 const isCurrent =
                   (item.to === '/work' && location.pathname.startsWith('/work')) ||
                   (item.to === '/contact' && location.pathname === '/contact') ||
-                  (item.isHash && activeHash === '#about');
+                  (item.isHash && activeHash === targetHash);
 
                 return (
                   <li key={item.label} className="relative flex items-center">

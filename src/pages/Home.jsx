@@ -7,6 +7,7 @@ import { Reveal } from '../motion/Reveal';
 import { Magnetic } from '../motion/Magnetic';
 import { Marquee } from '../components/Marquee';
 import { SelectedWork } from '../components/SelectedWork';
+import { Certificates } from '../components/Certificates';
 import { TransitionLink } from '../components/RouteTransition';
 import { useMotion } from '../motion/MotionContext';
 import { useLenis } from '../motion/LenisProvider';
@@ -546,6 +547,7 @@ export default function Home() {
       <Statement />
       <SelectedWork />
       <About />
+      <Certificates />
       <ContactCTA />
     </>
   );
